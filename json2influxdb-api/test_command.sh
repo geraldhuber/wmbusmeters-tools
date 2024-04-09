@@ -1,0 +1,1 @@
+cat ./testdata.json | python3 ./json2influxdb-api.py -c vel-srv-001 --config ./config.ini
