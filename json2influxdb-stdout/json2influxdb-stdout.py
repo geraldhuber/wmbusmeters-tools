@@ -1,17 +1,9 @@
 import sys
 sys.path.append('modules')
-import json
 import cmd_args_helper
 import c5isf
 import minomess
 import general
-
-EXIT_SUCCESS = 0
-EXIT_FAILURE = 1
-
-
-
-
 
 def output_data(influx_string: str) -> None:
     sys.stdout.write(influx_string)
@@ -36,7 +28,7 @@ def main() -> int:
     
     args.file.close()
 
-    return sys.exit(EXIT_SUCCESS)
+    return sys.exit(cmd_args_helper.EXIT_SUCCESS)
 
 if __name__ == "__main__":
     main()
